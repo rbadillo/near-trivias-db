@@ -11,5 +11,13 @@ CREATE TABLE `trivias_near`.`users` (
   `country` VARCHAR(128) NOT NULL COMMENT '',
   `state` VARCHAR(128) NOT NULL COMMENT '',
   `city` VARCHAR(128) NOT NULL COMMENT '',
+  `when_created` DATETIME NOT NULL ,
+  `when_updated` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)  COMMENT '',
   INDEX `user_index` (`email` ASC, `password` ASC)  COMMENT '');
+
+DROP TRIGGER IF EXISTS `trivias_near`.`users_datetime_created`;
+
+CREATE TRIGGER `trivias_near`.`users_datetime_created` BEFORE INSERT ON `trivias_near`.`users` 
+FOR EACH ROW
+SET NEW.when_created = NOW();

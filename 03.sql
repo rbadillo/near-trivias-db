@@ -8,5 +8,5 @@ CREATE TABLE `global_countries` (
 );
 
 INSERT INTO `global_countries` (`id`, `country_name`) VALUES
-(1, 'México'),
+(1, 'Mexico'),
 (2, 'USA');
