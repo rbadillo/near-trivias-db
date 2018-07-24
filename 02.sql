@@ -1,3 +1,6 @@
+USE trivias_near;
+
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `trivias_near`.`users` (
   `id` BIGINT(20) NOT NULL AUTO_INCREMENT COMMENT '',
   `name` VARCHAR(255) NOT NULL COMMENT '',
