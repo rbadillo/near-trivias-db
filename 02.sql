@@ -8,6 +8,7 @@ CREATE TABLE `trivias_near`.`users` (
   `age` INT NOT NULL COMMENT '',
   `email` VARCHAR(255) NOT NULL COMMENT '',
   `password` VARCHAR(255) NOT NULL COMMENT '',
+  `is_enabled` TINYINT NOT NULL DEFAULT 0,
   `country` VARCHAR(128) NOT NULL COMMENT '',
   `state` VARCHAR(128) NOT NULL COMMENT '',
   `city` VARCHAR(128) NOT NULL COMMENT '',
