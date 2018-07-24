@@ -45,11 +45,11 @@ DROP TABLE IF EXISTS `mx_cities`;
 CREATE TABLE IF NOT EXISTS `mx_cities` ( 
 `id` MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT , 
 `id_state` SMALLINT UNSIGNED NOT NULL ,
-`city` VARCHAR(60) NOT NULL,
+`city_name` VARCHAR(60) NOT NULL,
 PRIMARY KEY (`id`)
 );
 
-INSERT INTO mx_cities (id_state, city) VALUES
+INSERT INTO mx_cities (id_state, city_name) VALUES
 ('1', 'Aguascalientes'),
 ('1', 'San Francisco de los Romo'),
 ('1', 'El Llano'),

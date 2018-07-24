@@ -66,12 +66,11 @@ DROP TABLE IF EXISTS us_cities;
 CREATE TABLE us_cities (
 	id int(11) NOT NULL AUTO_INCREMENT,
 	id_state int(11) NOT NULL,
-	city varchar(50) NOT NULL,
+	city_name varchar(50) NOT NULL,
 	county varchar(50) NOT NULL,
 	latitude double NOT NULL,
 	longitude double NOT NULL,
-	PRIMARY KEY (ID),
-    FOREIGN KEY (id_state) REFERENCES us_states(id)
+	PRIMARY KEY (ID)
 );
 
 INSERT INTO us_cities VALUES
