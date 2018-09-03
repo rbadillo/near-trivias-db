@@ -6,6 +6,7 @@ CREATE TABLE `trivias_near`.`users` (
   `name` VARCHAR(255) NOT NULL COMMENT '',
   `last_name` VARCHAR(255) NOT NULL COMMENT '',
   `nickname` VARCHAR(255) NOT NULL COMMENT '',
+  `platform` VARCHAR(128) NOT NULL COMMENT '',
   `push_token` VARCHAR(255) NULL COMMENT '',
   `age` INT NOT NULL COMMENT '',
   `email` VARCHAR(255) NOT NULL COMMENT '',
